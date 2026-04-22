@@ -1,0 +1,6 @@
+{
+  "name": "Google Clock",
+  "description": "A polished Google-inspired clock application featuring a world clock, timer, and stopwatch with a modern Material Design aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

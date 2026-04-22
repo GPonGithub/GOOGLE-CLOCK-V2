@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Bento Grid (Slate/Dark) Palette */
+  --color-primary: #3b82f6; /* blue-500 */
+  --color-on-primary: #ffffff;
+  
+  --color-secondary: #10b981; /* emerald-500 */
+  --color-on-secondary: #ffffff;
+  
+  --color-surface: #020617; /* slate-950 */
+  --color-on-surface: #e2e8f0; /* slate-200 */
+  
+  --color-surface-container: #0f172a; /* slate-900 */
+  --color-surface-container-high: #1e293b; /* slate-800 */
+  
+  --color-outline: #334155; /* slate-700 */
+  --color-outline-variant: #1e293b; /* slate-800 */
+  
+  --color-error: #f43f5e; /* rose-500 */
+  --color-on-error: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased;
+  }
+}
+
+@layer components {
+  .bento-card {
+    @apply bg-slate-900/50 border border-slate-800 rounded-[2rem] p-6 shadow-xl backdrop-blur-sm;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-slate-800 rounded-full;
+  }
+}
+
+/* Navigation Active State */
+.nav-tab-active {
+  @apply bg-blue-600 text-white;
+}
+
